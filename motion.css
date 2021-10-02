@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  background:url(motion2.jpg);
+  background-size: cover;
+}
+#clock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 8px;
+  color: #fff;
+}
+#hours {
+  position: absolute;
+  top: 45%;
+  right: 46%;
+  font-weight: 15px;
+  font-size: 8rem;
+  transform: translate(-50%, -50%);
+}
+#minutes {
+  position: absolute;
+  top: 45%;
+  right: 45%;
+  font-size: 8rem;
+  transform: translate(60%, -50%);
+}
+#seconds {
+  position: absolute;
+  top: 0;
+  left: 844px;
+}
+.quotes{
+  position: absolute;
+  top: 93%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  transition: all .2s ease;
+}
+.quotes:hover{
+  transform: translateX(-2px),translateY(-7px);
+}
+.name{
+  color:#fff;
+  font-size: 28px;
+  font-weight: 0px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+
+}
+.colon{
+  position: absolute;
+  top: 44%;
+  right: 50%;
+  font-size: 8rem;
+  transform: translate(60%, -50%);
+}
+.link{
+  color:#fff;
+}
+.link input{
+  position:absolute;
+  left:5%;
+  top:3%;
+  margin: 4px ;
+  padding:3px 3px;
+  color: #fff;
+  text-align: center;
+  border: none;
+  background:transparent;
+  outline: none;
+  font-family: cursive;
+  transition: all .2s ease-in-out;
+  font-size: 15px;
+}
+.link:before{
+  content:"Links : ";
+  position:absolute;
+  left:2%;
+  top:34px;
+  cursor: pointer;
+}
+.link input:hover{
+  width:15%;
+  cursor: pointer;
+  border-bottom: 2px solid #fff;
+}
